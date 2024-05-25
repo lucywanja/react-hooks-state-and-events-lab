@@ -10,6 +10,7 @@ function App() {
 
 
   function handleDarkModeClick () {
+    //  Using the previous state value (prevMode) ensures the state is correctly toggled even if the state update is asynchronous.
     setIsDarkMode((prevMode) => !prevMode)
     
   }
